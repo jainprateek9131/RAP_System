@@ -16,6 +16,17 @@ This project is a Reverse Auction system where Buyers create auctions and Vendor
 
 ---
 
+## Setup Instructions
+Step 1: Update Connection String
+<img width="1161" height="79" alt="image" src="https://github.com/user-attachments/assets/2c5dc80d-85cf-498e-b556-4e13e4ab7bd2" />
+
+Step 2: Run Migration by selecting the infrastructure layer.
+<img width="1131" height="309" alt="image" src="https://github.com/user-attachments/assets/47cdc29a-0f4e-42f2-b1de-3559d4c50df2" />
+
+Step 3: Run Project
+<img width="1874" height="956" alt="image" src="https://github.com/user-attachments/assets/1db1b661-ecb6-4db3-aade-f4399b699585" />
+
+---
 # Architecture Used
 
 We used Layered Architecture:
@@ -191,14 +202,4 @@ API calls
 Errors
 Business actions
 
-
-## Setup Instructions
-Step 1: Update Connection String
-<img width="1161" height="79" alt="image" src="https://github.com/user-attachments/assets/2c5dc80d-85cf-498e-b556-4e13e4ab7bd2" />
-
-Step 2: Run Migration by selecting the infrastructure layer.
-<img width="1131" height="309" alt="image" src="https://github.com/user-attachments/assets/47cdc29a-0f4e-42f2-b1de-3559d4c50df2" />
-
-Step 3: Run Project
-<img width="1874" height="956" alt="image" src="https://github.com/user-attachments/assets/1db1b661-ecb6-4db3-aade-f4399b699585" />
 
