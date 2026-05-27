@@ -29,7 +29,7 @@ Step 3: Run Project
 ---
 # Architecture Used
 
-We used Layered Architecture:
+I used Layered Architecture:
 
 API Layer (Controllers)
 ↓
