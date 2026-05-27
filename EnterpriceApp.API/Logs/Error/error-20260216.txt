@@ -1,0 +1,85 @@
+2026-02-16 12:51:47.274 +05:30 [ERR] This is an error message
+2026-02-16 12:56:43.426 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.NotImplementedException: The method or operation is not implemented.
+   at EnterpriseApp.Application.Services.UserService.GetAllUserAsync() in C:\Users\prateek.jain\Desktop\March_2025\00_Lea\0_DAA\Clean Architecture\EnterpriseApp\EnterpriseApp.Application\Services\UserService.cs:line 24
+   at EnterpriceApp.API.Controllers.UserController.Get() in C:\Users\prateek.jain\Desktop\March_2025\00_Lea\0_DAA\Clean Architecture\EnterpriseApp\EnterpriceApp.API\Controllers\UserController.cs:line 19
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-02-16 15:02:18.448 +05:30 [ERR] Unhandled exception occurred
+System.NotImplementedException: The method or operation is not implemented.
+   at EnterpriseApp.Application.Services.UserService.GetAllUserAsync() in C:\Users\prateek.jain\Desktop\March_2025\00_Lea\0_DAA\Clean Architecture\EnterpriseApp\EnterpriseApp.Application\Services\UserService.cs:line 24
+   at EnterpriceApp.API.Controllers.UserController.Get() in C:\Users\prateek.jain\Desktop\March_2025\00_Lea\0_DAA\Clean Architecture\EnterpriseApp\EnterpriceApp.API\Controllers\UserController.cs:line 19
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at EnterpriceApp.API.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\prateek.jain\Desktop\March_2025\00_Lea\0_DAA\Clean Architecture\EnterpriseApp\EnterpriceApp.API\Middleware\ExceptionMiddleware.cs:line 22
+2026-02-16 15:05:10.938 +05:30 [ERR] Unhandled exception occurred......................
+System.NotImplementedException: The method or operation is not implemented.
+   at EnterpriseApp.Application.Services.UserService.GetAllUserAsync() in C:\Users\prateek.jain\Desktop\March_2025\00_Lea\0_DAA\Clean Architecture\EnterpriseApp\EnterpriseApp.Application\Services\UserService.cs:line 24
+   at EnterpriceApp.API.Controllers.UserController.Get() in C:\Users\prateek.jain\Desktop\March_2025\00_Lea\0_DAA\Clean Architecture\EnterpriseApp\EnterpriceApp.API\Controllers\UserController.cs:line 19
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at EnterpriceApp.API.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\prateek.jain\Desktop\March_2025\00_Lea\0_DAA\Clean Architecture\EnterpriseApp\EnterpriceApp.API\Middleware\ExceptionMiddleware.cs:line 22
+2026-02-16 15:06:07.556 +05:30 [ERR] Unhandled exception occurred
+System.NotImplementedException: The method or operation is not implemented.
+   at EnterpriseApp.Application.Services.UserService.GetAllUserAsync() in C:\Users\prateek.jain\Desktop\March_2025\00_Lea\0_DAA\Clean Architecture\EnterpriseApp\EnterpriseApp.Application\Services\UserService.cs:line 24
+   at EnterpriceApp.API.Controllers.UserController.Get() in C:\Users\prateek.jain\Desktop\March_2025\00_Lea\0_DAA\Clean Architecture\EnterpriseApp\EnterpriceApp.API\Controllers\UserController.cs:line 19
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at EnterpriceApp.API.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\prateek.jain\Desktop\March_2025\00_Lea\0_DAA\Clean Architecture\EnterpriseApp\EnterpriceApp.API\Middleware\ExceptionMiddleware.cs:line 22
+2026-02-16 15:06:46.163 +05:30 [ERR] Unhandled exception occurred
+System.NotImplementedException: The method or operation is not implemented.
+   at EnterpriseApp.Application.Services.UserService.GetAllUserAsync() in C:\Users\prateek.jain\Desktop\March_2025\00_Lea\0_DAA\Clean Architecture\EnterpriseApp\EnterpriseApp.Application\Services\UserService.cs:line 24
+   at EnterpriceApp.API.Controllers.UserController.Get() in C:\Users\prateek.jain\Desktop\March_2025\00_Lea\0_DAA\Clean Architecture\EnterpriseApp\EnterpriceApp.API\Controllers\UserController.cs:line 19
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at EnterpriceApp.API.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\prateek.jain\Desktop\March_2025\00_Lea\0_DAA\Clean Architecture\EnterpriseApp\EnterpriceApp.API\Middleware\ExceptionMiddleware.cs:line 22

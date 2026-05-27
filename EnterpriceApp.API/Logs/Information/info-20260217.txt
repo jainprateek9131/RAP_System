@@ -1,0 +1,126 @@
+2026-02-17 14:48:07.028 +05:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-02-17 14:48:16.145 +05:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-02-17 14:48:16.239 +05:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-02-17 14:48:33.208 +05:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-02-17 14:48:33.996 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-02-17 14:48:34.023 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-02-17 14:48:34.025 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-02-17 14:48:34.025 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-02-17 14:48:34.042 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-02-17 14:48:34.054 +05:30 [INF] Applying migration '20260217091816_AddProductEnitity'.
+2026-02-17 14:48:34.118 +05:30 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Products] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [Price] decimal(18,2) NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    [CreatedBy] nvarchar(max) NOT NULL,
+    [UpdatedAt] datetime2 NULL,
+    [UpdatedBy] nvarchar(max) NULL,
+    [IsActive] bit NOT NULL,
+    CONSTRAINT [PK_Products] PRIMARY KEY ([Id])
+);
+2026-02-17 14:48:34.132 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260217091816_AddProductEnitity', N'8.0.24');
+2026-02-17 14:48:50.833 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44386/swagger - null null
+2026-02-17 14:48:50.856 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-17 14:48:50.867 +05:30 [INF] Hosting environment: Development
+2026-02-17 14:48:50.867 +05:30 [INF] Content root path: C:\Users\prateek.jain\Desktop\March_2025\00_Lea\0_DAA\Clean Architecture\EnterpriseApp\EnterpriceApp.API
+2026-02-17 14:48:51.560 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44386/swagger - 301 null null 731.6932ms
+2026-02-17 14:48:51.563 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44386/swagger/index.html - null null
+2026-02-17 14:48:51.639 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44386/swagger/index.html - 200 null text/html;charset=utf-8 76.1935ms
+2026-02-17 14:48:51.692 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44386/swagger/swagger-ui.css - null null
+2026-02-17 14:48:51.692 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44386/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-17 14:48:51.695 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44386/_vs/browserLink - null null
+2026-02-17 14:48:51.696 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44386/swagger/swagger-ui-standalone-preset.js - null null
+2026-02-17 14:48:51.703 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44386/swagger/swagger-ui-bundle.js - null null
+2026-02-17 14:48:51.711 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44386/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 18.9069ms
+2026-02-17 14:48:51.759 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-02-17 14:48:51.759 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-02-17 14:48:51.762 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44386/swagger/swagger-ui.css - 200 152034 text/css 69.603ms
+2026-02-17 14:48:51.762 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-02-17 14:48:51.765 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44386/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 69.1982ms
+2026-02-17 14:48:51.792 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44386/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 90.112ms
+2026-02-17 14:48:51.807 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44386/_vs/browserLink - 200 null text/javascript; charset=UTF-8 114.742ms
+2026-02-17 14:48:52.127 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44386/swagger/v1/swagger.json - null null
+2026-02-17 14:48:52.130 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44386/swagger/favicon-32x32.png - null null
+2026-02-17 14:48:52.132 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-02-17 14:48:52.132 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44386/swagger/favicon-32x32.png - 200 628 image/png 1.9877ms
+2026-02-17 14:48:52.140 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44386/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.7062ms
+2026-02-17 14:51:10.262 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44386/swagger/index.html - null null
+2026-02-17 14:51:10.290 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-17 14:51:10.292 +05:30 [INF] Hosting environment: Development
+2026-02-17 14:51:10.292 +05:30 [INF] Content root path: C:\Users\prateek.jain\Desktop\March_2025\00_Lea\0_DAA\Clean Architecture\EnterpriseApp\EnterpriceApp.API
+2026-02-17 14:51:10.454 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44386/swagger/index.html - 200 null text/html;charset=utf-8 198.5845ms
+2026-02-17 14:51:10.482 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44386/_vs/browserLink - null null
+2026-02-17 14:51:10.482 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44386/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-17 14:51:10.489 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44386/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 3.7581ms
+2026-02-17 14:51:10.525 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44386/_vs/browserLink - 200 null text/javascript; charset=UTF-8 42.8957ms
+2026-02-17 14:51:10.653 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44386/swagger/v1/swagger.json - null null
+2026-02-17 14:51:10.664 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44386/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 11.1092ms
+2026-02-17 14:52:41.134 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44386/swagger/index.html - null null
+2026-02-17 14:52:41.147 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44386/swagger/index.html - 200 null text/html;charset=utf-8 13.6302ms
+2026-02-17 14:52:41.206 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44386/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-17 14:52:41.208 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44386/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 2.1051ms
+2026-02-17 14:52:41.210 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44386/_vs/browserLink - null null
+2026-02-17 14:52:41.237 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44386/_vs/browserLink - 200 null text/javascript; charset=UTF-8 27.1921ms
+2026-02-17 14:52:41.298 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44386/swagger/v1/swagger.json - null null
+2026-02-17 14:52:41.305 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44386/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.4134ms
+2026-02-17 14:53:01.104 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44386/swagger/index.html - null null
+2026-02-17 14:53:01.134 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-17 14:53:01.136 +05:30 [INF] Hosting environment: Development
+2026-02-17 14:53:01.136 +05:30 [INF] Content root path: C:\Users\prateek.jain\Desktop\March_2025\00_Lea\0_DAA\Clean Architecture\EnterpriseApp\EnterpriceApp.API
+2026-02-17 14:53:01.321 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44386/swagger/index.html - 200 null text/html;charset=utf-8 222.67ms
+2026-02-17 14:53:01.352 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44386/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-17 14:53:01.352 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44386/_vs/browserLink - null null
+2026-02-17 14:53:01.357 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44386/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 3.9343ms
+2026-02-17 14:53:01.390 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44386/_vs/browserLink - 200 null text/javascript; charset=UTF-8 38.3753ms
+2026-02-17 14:53:01.428 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44386/swagger/v1/swagger.json - null null
+2026-02-17 14:53:01.437 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44386/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.9517ms
+2026-02-17 14:53:17.079 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44386/api/Product - application/json 35
+2026-02-17 14:53:17.105 +05:30 [INF] Executing endpoint 'EnterpriceApp.API.Controllers.ProductController.Create (EnterpriceApp.API)'
+2026-02-17 14:53:17.141 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(EnterpriseApp.Application.DTOs.CreateProductDto) on controller EnterpriceApp.API.Controllers.ProductController (EnterpriceApp.API).
+2026-02-17 14:53:59.614 +05:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-02-17 14:55:10.560 +05:30 [INF] Executed DbCommand (76ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([CreatedAt], [CreatedBy], [IsActive], [Name], [Price], [UpdatedAt], [UpdatedBy])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2026-02-17 14:55:33.722 +05:30 [INF] Executing OkObjectResult, writing value of type 'EnterpriceApp.API.Common.ApiResponse`1[[EnterpriseApp.Application.DTOs.ProductResponseDto, EnterpriseApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-02-17 14:55:33.734 +05:30 [INF] Executed action EnterpriceApp.API.Controllers.ProductController.Create (EnterpriceApp.API) in 136589.5114ms
+2026-02-17 14:55:33.735 +05:30 [INF] Executed endpoint 'EnterpriceApp.API.Controllers.ProductController.Create (EnterpriceApp.API)'
+2026-02-17 14:55:33.753 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44386/api/Product - 200 null application/json; charset=utf-8 136673.278ms
+2026-02-17 15:15:07.926 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44386/swagger/index.html - null null
+2026-02-17 15:15:07.954 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-17 15:15:07.956 +05:30 [INF] Hosting environment: Development
+2026-02-17 15:15:07.956 +05:30 [INF] Content root path: C:\Users\prateek.jain\Desktop\March_2025\00_Lea\0_DAA\Clean Architecture\EnterpriseApp\EnterpriceApp.API
+2026-02-17 15:15:08.137 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44386/swagger/index.html - 200 null text/html;charset=utf-8 217.503ms
+2026-02-17 15:15:08.161 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44386/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-17 15:15:08.161 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44386/_vs/browserLink - null null
+2026-02-17 15:15:08.171 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44386/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 5.4975ms
+2026-02-17 15:15:08.206 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44386/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.4699ms
+2026-02-17 15:15:08.235 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44386/swagger/v1/swagger.json - null null
+2026-02-17 15:15:08.244 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44386/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.6332ms
+2026-02-17 15:15:38.441 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44386/api/Product - application/json 36
+2026-02-17 15:15:38.460 +05:30 [INF] Executing endpoint 'EnterpriceApp.API.Controllers.ProductController.Create (EnterpriceApp.API)'
+2026-02-17 15:15:38.497 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(EnterpriseApp.Application.DTOs.CreateProductDto) on controller EnterpriceApp.API.Controllers.ProductController (EnterpriceApp.API).
+2026-02-17 15:15:41.062 +05:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-02-17 15:15:41.574 +05:30 [INF] Executed DbCommand (52ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([CreatedAt], [CreatedBy], [IsActive], [Name], [Price], [UpdatedAt], [UpdatedBy])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2026-02-17 15:15:41.607 +05:30 [INF] Executing OkObjectResult, writing value of type 'EnterpriceApp.API.Common.ApiResponse`1[[EnterpriseApp.Application.DTOs.ProductResponseDto, EnterpriseApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-02-17 15:15:41.618 +05:30 [INF] Executed action EnterpriceApp.API.Controllers.ProductController.Create (EnterpriceApp.API) in 3117.544ms
+2026-02-17 15:15:41.619 +05:30 [INF] Executed endpoint 'EnterpriceApp.API.Controllers.ProductController.Create (EnterpriceApp.API)'
+2026-02-17 15:15:41.624 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44386/api/Product - 200 null application/json; charset=utf-8 3183.7665ms
